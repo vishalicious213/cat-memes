@@ -179,5 +179,5 @@ function getEmotionsArray(cats){
 console.log(emotionsArray)
 }
 
-// getEmotionsArray(catsData)
+getEmotionsArray(catsData)
 
