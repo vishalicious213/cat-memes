@@ -184,14 +184,16 @@ function getEmotionsArray(cats){
     return emotionsArray
 }
 
+// render emotions in emotionRadiosDiv
 function renderEmotionsRadios(cats) {
     const emotions = getEmotionsArray(cats)
+    let radioItems = ``
 
     for (let emotion of emotions) {
-        let emotionP = document.createElement("p")
-        emotionP.textContent = emotion
-        emotionRadiosDiv.append(emotionP)
+        radioItems += `<p>${emotion}</p>`
     }
+
+    emotionRadiosDiv.innerHTML = radioItems
 }
 
 renderEmotionsRadios(catsData)
