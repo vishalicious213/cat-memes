@@ -23,7 +23,6 @@ function renderEmotionsRadios(cats) {
     let radioItems = ``
 
     for (let emotion of emotions) {
-        // radioItems += `<p>${emotion}</p>`
         radioItems += `
             <div class="radio">
                 <label for="${emotion}">${emotion}</label>
@@ -43,7 +42,13 @@ function renderEmotionsRadios(cats) {
 emotionRadiosDiv.addEventListener("change", highlightCheckedOption)
 
 function highlightCheckedOption(e) {
-    // console.log(e.target.id)
+    // remove highlight from all radio buttons
+    const radioButtons = document.getElementsByClassName("radio")
+    for (let radioButton of radioButtons) {
+        radioButton.classList.remove("highlight")
+    }
+
+    // add highlight to selected radio button
     document.getElementById(e.target.id).parentElement.classList.add("highlight")
 }
 
