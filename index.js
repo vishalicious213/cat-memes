@@ -43,8 +43,8 @@ function renderEmotionsRadios(cats) {
 emotionRadiosDiv.addEventListener("change", highlightCheckedOption)
 
 function highlightCheckedOption(e) {
-    console.log(e.target.id)
-    document.getElementById(e.target.id).classList.add("highlight")
+    // console.log(e.target.id)
+    document.getElementById(e.target.id).parentElement.classList.add("highlight")
 }
 
 renderEmotionsRadios(catsData)
