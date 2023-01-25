@@ -40,5 +40,9 @@ function renderEmotionsRadios(cats) {
     emotionRadiosDiv.innerHTML = radioItems
 }
 
+emotionRadiosDiv.addEventListener("change", function(e) {
+    console.log(e.target.id)
+})
+
 renderEmotionsRadios(catsData)
 
