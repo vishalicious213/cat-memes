@@ -80,13 +80,15 @@ function getMatchingCatsArray() {
     }
 }
 
+// return a single cat to be rendered (if > 1 cat, randomly choose one)
 function getSingleCatObject() {
     const catsArray = getMatchingCatsArray()
 
     if (catsArray.length === 1) {
         console.log(catsArray[0])
     } else {
-        console.log(catsArray)
+        let randomCat = catsArray[Math.floor(Math.random() * catsArray.length)]
+        console.log(randomCat)
     }
 }
 
