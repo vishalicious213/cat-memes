@@ -7,7 +7,7 @@ const gifsOnlyCheckbox = document.getElementById("gifs-only-option")
 emotionRadiosDiv.addEventListener("change", highlightCheckedOption)
 getImageBtn.addEventListener("click", renderCat)
 
-// RENDER EMOTIONS LIST & RADIO BUTTONS
+// ⬇️ RENDER EMOTIONS LIST & RADIO BUTTONS ⬇️
 
 // return emotions from array of data
 function getEmotionsArray(cats){
@@ -58,7 +58,7 @@ function highlightCheckedOption(e) {
     document.getElementById(e.target.id).parentElement.classList.add("highlight")
 }
 
-// RENDER SELECTED CAT GIF
+// ⬇️ RENDER SELECTED CAT IMAGE ⬇️
 
 // return array of cats that fit selected mood and .gif selection
 function getMatchingCatsArray() {
@@ -81,7 +81,13 @@ function getMatchingCatsArray() {
 }
 
 function getSingleCatObject() {
-    console.log(getMatchingCatsArray())
+    const catsArray = getMatchingCatsArray()
+
+    if (catsArray.length === 1) {
+        console.log(catsArray[0])
+    } else {
+        console.log(catsArray)
+    }
 }
 
 function renderCat() {
