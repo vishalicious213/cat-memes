@@ -19,11 +19,14 @@ function highlightCheckedOption(e) {
     document.getElementById(e.target.id).parentElement.classList.add("highlight")
 }
 
+// return array of cats that fit selected mood and .gif selection
 function getMatchingCatsArray() {
+    // get emotion if one is selected
     if (document.querySelector("input[type='radio']:checked")) {
         const checkedEmotion = document.querySelector("input[type='radio']:checked").value
         const onlyGifs = gifsOnlyCheckbox.checked
 
+        // filter cat for emotion and whether it's a .gif
         const matchingCatsArray = catsData.filter(function(cat) {
             if (onlyGifs) {
                 return (cat.emotionTags.includes(checkedEmotion) && cat.isGif)
@@ -32,9 +35,7 @@ function getMatchingCatsArray() {
             }
         })
 
-        console.log('selected emotion', checkedEmotion)
-        console.log('gifs only', onlyGifs)
-        console.log('matching cats', matchingCatsArray)
+        return matchingCatsArray
     }
 }
 
