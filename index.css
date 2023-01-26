@@ -133,12 +133,20 @@ input[type="radio"]{
     justify-content: center;
     border: 1px solid #67595e;
     border-radius: 5px;
-    width: 420px;
-    height: 490px;
+    width: 98%;
+    max-width: 420px;
+    height: 570px;
     background-color: #fff0ee;
 }
 
+#meme-modal-inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .cat-img{
+    width: 100%;
     max-width: 340px;
     max-height: 420px;
     border-radius: 5px;
