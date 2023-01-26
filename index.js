@@ -3,11 +3,13 @@ import { catsData } from "./data.js"
 const emotionRadiosDiv = document.getElementById("emotion-radios")
 const getImageBtn = document.getElementById("get-image-btn")
 const gifsOnlyCheckbox = document.getElementById("gifs-only-option")
-const memeModal = document.getElementById('meme-modal')
-const memeModalInner = document.getElementById('meme-modal-inner')
+const memeModal = document.getElementById("meme-modal")
+const memeModalInner = document.getElementById("meme-modal-inner")
+const memeModalCloseBtn = document.getElementById("meme-modal-close-btn")
 
 emotionRadiosDiv.addEventListener("change", highlightCheckedOption)
 getImageBtn.addEventListener("click", renderCat)
+memeModalCloseBtn.addEventListener("click", closeModal)
 
 // ⬇️ RENDER EMOTIONS LIST & RADIO BUTTONS ⬇️
 
@@ -106,6 +108,10 @@ function renderCat() {
     `
 
     memeModal.style.display = "flex"
+}
+
+function closeModal() {
+    memeModal.style.display = "none"
 }
 
 renderEmotionsRadios(catsData)
