@@ -43,3 +43,28 @@ Deployed at: https://vish213-cat-memes.netlify.app/
 - string/template literals
 - Math.floor()
 - Math.random()
+
+## CSS concepts
+
+- display: flex
+    - align-items: center
+    - justify-content: center
+    - flex-direction: column
+    - gap
+- selector:first-child
+- selector:last-child
+- cursor: pointer
+- input[type="radio"]
+- width: unset
+- border-top-left-radius
+- border-top-right-radius
+- border-bottom-left-radius
+- border-bottom-right-radius
+- accent-color
+- display: none
+- position: fixed
+    - top
+    - left
+    - right
+- position: absolute
+- background-color: transparent
