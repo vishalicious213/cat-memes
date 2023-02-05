@@ -10,7 +10,9 @@ Deployed at: https://vish213-cat-memes.netlify.app/
 
 - variables
 - arrays
+    - .filter()
     - .includes()
+    - .length()
     - .push()
 - objects
 - for loops
@@ -24,12 +26,20 @@ Deployed at: https://vish213-cat-memes.netlify.app/
 - document.getElementById()
     - .parentElement
 - document.getElementsByClassName()
+- document.querySelector
+    - input[]:checked
 - element.innerHTML
 - element.classList
     - .add
     - .remove()
+- element.checked
+- element.style.display
+    - display = "flex"
+    - display = "none"
 - event listeners
     - addEventListener()
         - "change" event
         - "click" event
 - string/template literals
+- Math.floor()
+- Math.random()
